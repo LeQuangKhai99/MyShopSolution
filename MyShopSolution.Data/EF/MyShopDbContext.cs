@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MyShopSolution.Data.Configurations;
 using MyShopSolution.Data.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,17 @@ namespace MyShopSolution.Data.EF
     {
         public MyShopDbContext(DbContextOptions options) : base(options)
         {
-            
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new AppConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductInCategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new OrderConfiguration());
+            modelBuilder.ApplyConfiguration(new OrderDetailConfiguration());
+            //base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Product> Products { set; get; }

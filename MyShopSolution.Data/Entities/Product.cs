@@ -15,5 +15,9 @@ namespace MyShopSolution.Data.Entities
         public int ViewCount { get; set; }
         public DateTime DateCreated { get; set; }
         public string SeoAlias { get; set; }
+
+        public List<ProductInCategory> ProductInCategories { set; get; }
+
+        public List<OrderDetail> OrderDetails { set; get; }
     }
 }
