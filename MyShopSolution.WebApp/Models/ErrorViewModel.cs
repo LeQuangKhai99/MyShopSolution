@@ -6,6 +6,7 @@ namespace MyShopSolution.WebApp.Models
     {
         public string RequestId { get; set; }
 
+        public string mess { set; get; }
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 }
