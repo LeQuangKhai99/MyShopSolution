@@ -1,5 +1,5 @@
 # ASP.NET Core 3.1 project from Shin
-##Technologies
+## Technologies
 - ASP.NET Core 3.1
 - Entity Framework Core 3.1
 ## Contact for work
