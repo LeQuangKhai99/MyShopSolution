@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.MD = README.MD
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShopSolution.Data", "MyShopSolution.Data\MyShopSolution.Data.csproj", "{122C2EC8-3FBD-46A8-A92E-826FCBEE90F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShopSolution.Application", "MyShopSolution.Application\MyShopSolution.Application.csproj", "{2E1A464D-6276-4427-B32D-48BD071A816F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{B434A86E-10DA-4452-B497-D136CC447F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B434A86E-10DA-4452-B497-D136CC447F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B434A86E-10DA-4452-B497-D136CC447F29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{122C2EC8-3FBD-46A8-A92E-826FCBEE90F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{122C2EC8-3FBD-46A8-A92E-826FCBEE90F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{122C2EC8-3FBD-46A8-A92E-826FCBEE90F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{122C2EC8-3FBD-46A8-A92E-826FCBEE90F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1A464D-6276-4427-B32D-48BD071A816F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1A464D-6276-4427-B32D-48BD071A816F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1A464D-6276-4427-B32D-48BD071A816F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1A464D-6276-4427-B32D-48BD071A816F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
