@@ -13,7 +13,12 @@ namespace MyShopSolution.Data.Configurations
         public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder.ToTable("Categories");
+
             builder.HasKey(x => x.ID);
+
+            builder.Property(x => x.ID).UseIdentityColumn();
+
+
             builder.Property(x => x.Status).HasDefaultValue(Status.Active);
         }
     }

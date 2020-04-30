@@ -11,17 +11,20 @@ namespace MyShopSolution.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            // Đặt tên bảng
             builder.ToTable("Products");
-            // đặt khóa chính
+
             builder.HasKey(x => x.ID);
-            // not null
+            builder.Property(x => x.ID).UseIdentityColumn();
+
+
             builder.Property(x => x.Price).IsRequired();
+
             builder.Property(x => x.PromotionPrice).IsRequired();
-            // not nul and default value = 0
+
             builder.Property(x => x.Stock).IsRequired().HasDefaultValue(0);
+
             builder.Property(x => x.ViewCount).IsRequired().HasDefaultValue(0);
-            
+
         }
     }
 }
